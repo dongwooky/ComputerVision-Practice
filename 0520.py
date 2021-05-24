@@ -5,6 +5,7 @@ import sys
 img = cv2.imread('../Data/cv_fc_data/ch02/cat.bmp', cv2.IMREAD_GRAYSCALE)
 
 
+
 if img is None:
     print('Image load failed!')
     sys.exit()
