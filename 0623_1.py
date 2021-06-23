@@ -10,13 +10,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 
-src = cv2.imread('../Data/cv_fc_data/ch03/lenna.bmp', cv2.IMREAD_GRAYSCALE)
+src = cv2.imread('../Data/cv_fc_data/ch03/lenna.bmp')
 
 if src is None:
     print('Image load failed!')
     sys.exit()
 
-colors = ['b', 'g', 'r']
+colors = ['blue', 'green', 'red']
 bgr_planes = cv2.split(src)
 
 for (p, c) in zip(bgr_planes, colors):
@@ -29,5 +29,3 @@ cv2.waitKey(1)
 
 plt.plot(hist)
 plt.show()
-
-src = cv2.imread('lenna.bmp')
