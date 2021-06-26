@@ -20,4 +20,3 @@ x, y, w, h = cv2.selectROI(src)
 src_ycrcb = cv2.cvtColor(src, cv2.COLOR_BGR2YCrCb)
 crop = src_ycrcb[y:y+h, x:x+w]
 
-c
